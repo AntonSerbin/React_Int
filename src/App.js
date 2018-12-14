@@ -4,15 +4,13 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import styled from 'styled-components'
 
-
+import HelloWorld from './components/HelloWorld'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-     
-      </div>
+    <p><HelloWorld /></p>
     );
   }
 }
