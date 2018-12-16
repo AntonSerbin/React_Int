@@ -10,17 +10,23 @@ import Menu from './components/Menu';
 import Main from './components/Main';
 
 
-const MenuWrapper = styled.div`
-	height: 90px;
-	padding-top:21px;
-`
-
+const url = process.env.PUBLIC_URL + "/img/background.jpg"
 
 const HeadWrapper = styled.header`
 	width: 100%;
 	height: 48px;
 	background-color: #242424;
 	opacity: 0.8;
+`
+const MenuWrapper = styled.div`
+	height: 90px;
+	padding-top:21px;
+`
+const MainWrapper = styled.div`
+	height: 560px;
+	padding-top:130px;
+	background: url(${url}) no-repeat;
+	background-size: cover;
 `
 
 
@@ -41,6 +47,12 @@ class App extends Component {
 					<Menu/>
 				</Grid>
 			</MenuWrapper>
+			<MainWrapper>
+				<Grid>
+					<Main/>
+				</Grid>
+			</MainWrapper>
+
 		</div>
 
     );
